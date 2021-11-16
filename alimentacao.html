@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Alimentação</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar" class="nav">
+        <a href="./index.html">
+          <h1 class="logo">Bem Estar</h1>
+        </a>
+        <div class="menu">
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./imc.html">IMC</a>
+            </li>
+            <li>
+              <a href="./consultoria.html">Consultoria</a>
+            </li>
+            <li>
+              <a href="./alimentacao.html">Alimentação</a>
+            </li>
+          </ul>
+        </div>
+        <div class="toggle fas fa-bars icon-menu"></div>
+        <div class="toggle fas fa-times icon-close"></div>
+      </nav>
+    </header>
+    <section id="diet" class="container">
+      <div class="goal-container">
+        <h1 class="title">Dieta</h1>
+        <div class="goals-container">
+          <p>
+            Uma dieta balanceada é aquela que fornece ao organismo os nutrientes
+            essenciais para o seu correto funcionamento. Uma alimentação pobre
+            em nutrientes pode causar diversos problemas de saúde, que vão desde
+            cansaço e perda de energia a questões mais sérias que levam ao
+            comprometimento da função dos órgãos vitais. <br />Selecione os
+            alimentos que você quer incluir em sua dieta e calcule a quantidade
+            de calorias:
+          </p>
+
+          <div id="answer" class="answer-btn">
+            <div class="input-container">
+              <span class="obs" style="font-size: 0.6rem"
+                >*quantidade de kcal referente a 100g de alimento</span
+              >
+              <input
+                type="checkbox"
+                name="arroz"
+                value="130"
+                id="myRadio1"
+                style="display: none"
+              />
+              <label class="option" for="myRadio1">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons.flaticon.com/png/512/2714/premium/2714041.png?token=exp=1636508155~hmac=4faf2af6ad64c4ad7b0c3ba83272c24c"
+                  alt=""
+                />
+                <span id="option1">Arroz - 130kcal</span>
+              </label>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="checkbox"
+                name="feijao"
+                value="347"
+                id="myRadio2"
+                style="display: none"
+              />
+              <label class="option" for="myRadio2">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons-png.flaticon.com/512/766/766019.png"
+                  alt=""
+                /><span id="option2">Feijão - 347kcal</span>
+              </label>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="checkbox"
+                name="banana"
+                value="89"
+                id="myRadio3"
+                style="display: none"
+              />
+              <label class="option" for="myRadio3">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons.flaticon.com/png/512/3137/premium/3137068.png?token=exp=1636508072~hmac=df256c533f6d785f01e8037ce96a2c92"
+                  alt=""
+                /><span id="option3">Banana - 89kcal</span>
+              </label>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="checkbox"
+                name="carne"
+                value="219"
+                id="myRadio4"
+                style="display: none"
+              />
+              <label class="option" for="myRadio4">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons-png.flaticon.com/512/1046/1046769.png"
+                  alt=""
+                /><span id="option4">Carne vermelha - 219kcal</span>
+              </label>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="checkbox"
+                name="ovo"
+                value="155"
+                id="myRadio5"
+                style="display: none"
+              />
+              <label class="option" for="myRadio5">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons-png.flaticon.com/512/2437/2437740.png"
+                  alt=""
+                /><span id="option4">Ovo - 155kcal</span>
+              </label>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="checkbox"
+                name="peixe"
+                value="206"
+                id="myRadio6"
+                style="display: none"
+              />
+              <label class="option" for="myRadio6">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons-png.flaticon.com/512/875/875011.png"
+                  alt=""
+                />
+                <span id="option4">Peixe - 206kcal</span>
+              </label>
+            </div>
+
+            <div class="input-container">
+              <input
+                type="checkbox"
+                name="pao"
+                value="265"
+                id="myRadio7"
+                style="display: none"
+              />
+              <label class="option" for="myRadio7">
+                <img
+                  class="food-icon"
+                  src="https://cdn-icons.flaticon.com/png/512/3226/premium/3226045.png?token=exp=1636507919~hmac=2f902039bd00875c3445775ace38fc64"
+                  alt=""
+                /><span id="option4">Pão - 265kcal</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <button class="submit-btn" type="submit" onclick="sumKcal()">
+              OK
+            </button>
+            <button
+              class="submit-btn"
+              type="submit"
+              onclick="document.location.reload(true);"
+            >
+              Calcular novamente
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="result"></div>
+    </section>
+    <hr />
+
+    <footer class="footer">
+      <div class="info-footer">
+        <div class="contact-footer">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Ipiranga, Porto Alegre - RS</span>
+          </div>
+
+          <div class="icon">
+            <i class="fab fa-whatsapp"></i><span>(51) 99999999</span>
+          </div>
+
+          <div class="icon">
+            <i class="far fa-envelope"></i><span>atendimento@mail.com.br</span>
+          </div>
+        </div>
+
+        <div class="programs-footer">
+          <span>Conheça mais programas</span>
+          <ul>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          CNPJ: 00.000.000/0000-00 <br />
+          2021 &copy; Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

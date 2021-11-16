@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Metas</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar" class="nav">
+        <a href="./index.html">
+          <h1 class="logo">Bem Estar </h1>
+        </a>
+        <div class="menu">
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./imc.html">IMC</a>
+            </li>
+            <li>
+              <a href="./consultoria.html">Consultoria</a>
+            </li>
+            <li>
+              <a href="./alimentacao.html">Alimentação</a>
+            </li>
+          </ul>
+        </div>
+        <div class="toggle fas fa-bars icon-menu"></div>
+        <div class="toggle fas fa-times icon-close"></div>
+      </nav>
+    </header>
+
+    <section id="goals" class="container">
+      <div class="goal-container">
+        <h1 class="title">Consultoria</h1>
+
+        <div class="goals-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam totam,
+            eveniet quo quae minima unde odit, et a esse culpa quidem officiis
+            alias eum! Consequatur expedita neque nulla itaque quis.
+          </p>
+          <form class="answer-btn">
+            <div class="form-group">
+              <span>Qual é o seu nome? </span>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="ex: Ana da Silva  "
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <span>Qual é o seu objetivo com a consultoria? </span>
+
+              <select id="select" name="select" class="select">
+                <option value="">Escolha uma opção</option>
+                <option value="emagrecer">Emagrecer</option>
+                <option value="flacidez">Acabar com a flacidez</option>
+                <option value="celulite">Acabar com a celulite</option>
+                <option value="gordura-localizada">
+                  Perder gordura localizada
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <span
+                >Exlique um pouco sua rotina: quanto tempo você tem disponível
+                para a prática de exercícios físicos?
+              </span>
+
+              <input
+                type="text"
+                id="content"
+                placeholder="ex: tenho disponível 40 minutos, 3 vezes na semana para praticar exercícios. Meu exercício preferido é correr, ..."
+                required
+              />
+            </div>
+
+            <div class="btn form-group">
+              <button
+                class="submit-btn"
+                id="signup"
+                type="button"
+                onclick="insertCards()"
+              >
+                Quero começar
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cards-container"></div>
+      </div>
+    </section>
+    <hr />
+
+    <footer class="footer">
+      <div class="info-footer">
+        <div class="contact-footer">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Ipiranga, Porto Alegre - RS</span>
+          </div>
+
+          <div class="icon">
+            <i class="fab fa-whatsapp"></i><span>(51) 99999999</span>
+          </div>
+
+          <div class="icon">
+            <i class="far fa-envelope"></i><span>atendimento@mail.com.br</span>
+          </div>
+        </div>
+
+        <div class="programs-footer">
+          <span>Conheça mais programas</span>
+          <ul>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+            <li>Lorem Ipsum</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          CNPJ: 00.000.000/0000-00 <br />
+          2021 &copy; Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+/* ------reset------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+fieldset {
+    border: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f3f3f3;
+}
+
+img {
+    width: 180px;
+}
