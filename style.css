@@ -249,6 +249,7 @@ input[type="checkbox"]:checked + label {
     grid-template-columns: repeat(3, 300px);
     gap: 1rem;
     width: 80vw;
+    margin-top: 1rem;
 }
 
 .client-card {
