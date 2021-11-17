@@ -93,6 +93,10 @@ function registerConsulting() {
 
     }
     data.push(register)
+    console.log(data.length)
+   
+    let total = document.getElementById('total')
+    total.innerText = `Total de cards: ${data.length} `
 
     localStorage.setItem('userData', JSON.stringify(data))
 
@@ -101,7 +105,7 @@ function registerConsulting() {
 
 // cards
 function insertCards() {
-
+ 
     let cardsContainer = document.querySelector('.cards-container')
     let clientCard = document.createElement('div')
     clientCard.classList = 'client-card'
@@ -121,6 +125,8 @@ function insertCards() {
 
     let date = document.createElement('span')
     clientCard.appendChild(date)
+
+   
 
     var d = new Date()
     var day = String(d.getDate()).padStart(2, '0')
@@ -159,4 +165,4 @@ function insertCards() {
 
 }
 
-
+window.onload =  localStorage.clear();
